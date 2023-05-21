@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": ["ES2017", "ESNext.AsyncIterable"],
+    "typeRoots": ["./node_modules/@types", "./src/types"],
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "module": "CommonJS",
+    "pretty": true, // highlight errors
+    "sourceMap": true,
+    "outDir": "./dist",
+    "allowJs": true,
+    // "noEmit": true,
+    "esModuleInterop": true
+  },
+  "include": ["./src/**/*"],
+  "exclude": ["node_modules", "tests"]
+}

@@ -1,0 +1,30 @@
+{
+  "devDependencies": {
+    "@types/jest": "^29.5.1",
+    "@types/node": "^20.2.1",
+    "@typescript-eslint/eslint-plugin": "^5.59.6",
+    "@typescript-eslint/parser": "^5.59.6",
+    "eslint": "^8.41.0",
+    "husky": "^8.0.0",
+    "jest": "^29.5.0",
+    "lint-staged": "^13.2.2",
+    "nodemon": "^2.0.22",
+    "prettier": "^2.8.8",
+    "ts-jest": "^29.1.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  },
+  "scripts": {
+    "test": "jest",
+    "prepare": "husky install .husky && npx husky-init -y  && npx husky set .husky/pre-commit \"npm run pre-commit\"",
+    "dev": "nodemon",
+    "lint": "eslint --ignore-path .gitignore --ext .js,.ts,.tsx .",
+    "build": "tsc -p tsconfig.json",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "ready": "npm run format && npm run lint && npm run build",
+    "precommit": "lint-staged --allow-empty"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3"
+  }
+}
