@@ -36,8 +36,6 @@
     "lint": "eslint --ignore-path .gitignore --ext .js,.ts,.tsx .",
     "build": "tsc -p tsconfig.json",
     "lint:fix": "eslint --ignore-path .gitignore --ext .js,.ts,.tsx . --fix",
-    "coverage": "jest -i --coverage",
-    "coverage:coveralls": "jest -i --coverage --coverageReporters=text-lcov | coveralls",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "ready": "npm run format && npm run lint && npm run build",
     "precommit": "lint-staged --allow-empty"
