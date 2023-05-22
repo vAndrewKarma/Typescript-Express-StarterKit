@@ -4,7 +4,7 @@ import { logger } from "./config/logger";
 async function init() {
   const app = express();
   if (config.env === "development") {
-    if (!module.children) {
+    if (require.main === module) {
       app
         .listen(config.app.port, () => {
           logger.info(
