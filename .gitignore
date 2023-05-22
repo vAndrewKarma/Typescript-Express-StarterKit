@@ -1,7 +1,7 @@
 node_modules
+.husky
 package-lock.json
 .env
 coverage
 dist
 package-lock.json
-.husky
