@@ -9,5 +9,8 @@ if (envFound.error) {
 process.env.NODE_ENV = process.env.NODE_ENV || "development";
 
 export default {
-  test: process.env.TEST_STRING,
+  env: process.env.NODE_ENV,
+  app: {
+    port: process.env.PORT,
+  },
 };
