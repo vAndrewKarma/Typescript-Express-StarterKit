@@ -5,6 +5,7 @@ async function init() {
   const app = express();
   if (config.env === "development") {
     if (require.main === module) {
+      // check if the current module is the main module being run directly
       app
         .listen(config.app.port, () => {
           logger.info(
