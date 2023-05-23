@@ -18,5 +18,6 @@ async function init() {
         process.exit(1);
       });
   }
+  return app;
 }
-init();
+export const app = init();

@@ -1,8 +1,18 @@
-import { describe, expect } from "@jest/globals";
-import { return_value } from "../src/app";
+import { describe, expect,beforeAll } from "@jest/globals";
+import {app} from '../src/app'
+import request from 'supertest'
+import { Express } from "express-serve-static-core";
+
+let initializedApp: Express; // global declaration
+
+
+beforeAll(async ()=>{
+   initializedApp = await app
+})
 
 describe("first test", () => {
-  test("return value", () => {
-    expect(return_value(1)).toBe(1);
+  test("return value", async () => {
+    const res = await request(initializedApp).get('/alive');
+    expect(res.status).toEqual(200);
   });
 });
