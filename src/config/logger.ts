@@ -5,7 +5,8 @@ import path from "path";
 // configure format
 const enumError = winston.format((info) => {
   // a simple function  which returns the stack trace also when logger.error is fired
-  if (info instanceof Error) {
+  if (info instanceof Error && config.env === "development") {
+    // i think it is better to log  traced errors only if we using development
     Object.assign(info, { message: info.stack });
   }
   return info;
