@@ -10,10 +10,10 @@ export default {
   coverageProvider: "v8",
   moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"],
   preset: "ts-jest",
-  testEnvironment: 'node',
+  testEnvironment: "node",
   testEnvironmentOptions: {
-    NODE_ENV: 'test',
+    NODE_ENV: "test",
   },
-  coveragePathIgnorePatterns: ['node_modules', 'src/config', 'tests'],
-  coverageReporters: ['text', 'lcov', 'clover', 'html'],
+  coveragePathIgnorePatterns: ["node_modules", "src/config", "tests"],
+  coverageReporters: ["text", "lcov", "clover", "html"],
 };
