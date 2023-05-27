@@ -1,13 +1,15 @@
 import express from "express";
 import cors from "cors";
-import type { Express } from "express";
-import { NotFoundHandler, GlobalErrorHandler } from "../config/routehandle";
+import helmet from "helmet";
+import config from "../config";
+import type { Express, NextFunction, Request, Response } from "express";
 import { logger } from "../config/logger";
+
 export default async function ({ app }: { app: Express }) {
-  const clients = ["http://localhost:3000"]; // i will use a random client, but here you configure the clients which can use your api
+  const clients = [config.client]; // i will use a random client, but here you configure the clients which can use your api
   const corsopt = {
     // btw here's a tip, never use cors() cause you basically allow requests for any client, and let's say it is not the best practice if you are building an api
-    credentials: true,
+    credentials: true, // when set to true, it shows that the request which was made can include credentials, like cookies, http auth
     allowedHeaders: [
       "Authorization",
       "Content-type",
@@ -31,6 +33,12 @@ export default async function ({ app }: { app: Express }) {
     },
   };
 
+  const helmetOptions = {
+    dnsPrefetchControl: { allow: true },
+    contentSecurityPolicy: false,
+  };
+
+  app.use(helmet(helmetOptions));
   app.use(cors(corsopt));
 
   //ROUTE FOR STATUS CHECKING
@@ -45,4 +53,24 @@ export default async function ({ app }: { app: Express }) {
 
   app.use(NotFoundHandler);
   app.use(GlobalErrorHandler);
+}
+// FUNCTIONS FOR ROUTE HANDLING
+function NotFoundHandler(req: Request, res: Response, next: NextFunction) {
+  const error = new Error(`${req.originalUrl} couldn't be found`);
+  error["status"] = 404;
+  next(error); // pass error to errorhandler mw
+}
+
+function GlobalErrorHandler(
+  error: Error,
+  req: Request,
+  res: Response,
+  next: NextFunction
+) {
+  // we use the error  passed by not found
+  logger.error(error);
+  res.status(error["status"] || 500); // pass the error status or 500 for internal server errors
+  res.json({
+    error: { message: error.message },
+  });
 }

@@ -12,6 +12,7 @@ async function init() {
         logger.info(
           `Server running on port ${config.app.port}  -  ENV: ${config.env}`
         );
+        logger.info(`Allowed Client: ${config.client}`);
       })
       .on("error", (error) => {
         logger.error(error.message);
