@@ -11,7 +11,14 @@ beforeAll(async () => {
 
 describe("status test", () => {
   test("return value", async () => {
-    const res = await request(initializedApp).get("/alive");
+    const res = await request(initializedApp).get('/alive');
     expect(res.status).toEqual(200);
   });
 });
+
+describe("Not Found handler testing",()=>{
+  test("not found handling",async ()=>{
+    const res = await request(initializedApp).get('/notexistingroute')
+    expect(res.status).toEqual(404)
+  })
+})
