@@ -28,5 +28,6 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - run: npm run ready
-    - run: npm test
     - run: echo $PORT
+    - run: npm test
+    
