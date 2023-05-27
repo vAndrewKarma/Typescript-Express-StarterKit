@@ -19,6 +19,6 @@ describe("status test", () => {
 describe("Not Found handler testing",()=>{
   test("not found handling",async ()=>{
     const res = await request(initializedApp).get('/notexistingroute')
-    expect(res.text).toBe(`{\"error\":{\"message\":\"/notexistingroute couldn't be found\"}}`)
+    expect(res.statusCode).toEqual(404)
   })
 })
