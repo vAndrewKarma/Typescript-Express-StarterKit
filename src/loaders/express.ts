@@ -35,7 +35,6 @@ export default async function ({ app }: { app: Express }) {
 
   const helmetOptions = {
     dnsPrefetchControl: { allow: true },
-    contentSecurityPolicy: false,
   };
 
   app.use(helmet(helmetOptions));
