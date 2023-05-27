@@ -10,7 +10,7 @@ beforeAll(async () => {
 });
 
 describe("status test", () => {
-  test("return value", async () => {
+  test("return value", async () => { 
     const res = await request(initializedApp).get('/alive');
     expect(res.status).toEqual(200);
   });
