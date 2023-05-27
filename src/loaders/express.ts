@@ -39,7 +39,7 @@ export default async function ({ app }: { app: Express }) {
 
   app.use(helmet(helmetOptions));
   app.use(cors(corsopt));
-
+  app.use(LogRequests);
   //ROUTE FOR STATUS CHECKING
   app.get("/alive", (req, res) => res.sendStatus(200)); // a simple status endpoint to check if the server is alive
   app.head("/alive", (req, res) => res.sendStatus(200)); // same thing but we retrieve only response headers
@@ -51,6 +51,7 @@ export default async function ({ app }: { app: Express }) {
   app.use(express.urlencoded({ extended: false })); // used for handling url encoded form data like name=Example+Test&age=20
 
   app.use(NotFoundHandler);
+
   app.use(GlobalErrorHandler);
 }
 // FUNCTIONS FOR ROUTE HANDLING
@@ -72,4 +73,13 @@ function GlobalErrorHandler(
   res.json({
     error: { message: error.message },
   });
+}
+
+function LogRequests(req: Request, res: Response, next: NextFunction) {
+  const start = Date.now();
+  res.on("close", () => {
+    const duration = Date.now() - start;
+    logger.debug(`${req.method} - ${duration}ms`);
+  });
+  next();
 }
