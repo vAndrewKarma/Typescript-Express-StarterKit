@@ -6,8 +6,14 @@ on:
   pull_request:
     branches: [main]
 
+
 jobs:
   build:
+    env:
+      PORT: 3000
+      NODE_ENV: development
+      CLIENT: http://localhost:3000
+      
     runs-on: ubuntu-latest
     strategy:
       matrix:
