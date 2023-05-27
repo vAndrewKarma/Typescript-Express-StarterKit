@@ -1,9 +1,10 @@
 import dotenv from "dotenv";
+import { logger } from "./logger";
 
 const envFound = dotenv.config();
 
 if (envFound.error) {
-  throw new Error("No .env file found");
+  logger.warn(".env file not found. If you are on an action ignore");
 }
 
 process.env.NODE_ENV = process.env.NODE_ENV || "development";
