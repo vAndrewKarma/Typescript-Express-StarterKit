@@ -10,9 +10,9 @@ on:
 jobs:
   test:
     env:
-      PORT: 3000
-      NODE_ENV: development
-      CLIENT: http://localhost:3000
+      PORT: ${{secrets.PORT}}
+      NODE_ENV: ${{secrets.NODE_ENV}}
+      CLIENT: ${{secrets.CLIENT}}
 
     runs-on: ubuntu-latest
     strategy:
@@ -21,13 +21,12 @@ jobs:
         
     steps:
     - uses: actions/checkout@v3
-    - name: Use Node.js ${{ matrix.node-version }}
+    - name: TEST - NODE  ${{ matrix.node-version }}
       uses: actions/setup-node@v3
       with:
         node-version: ${{matrix.node-version}}
         cache: 'npm'
     - run: npm ci
-    - run: npm run ready
     - run: echo $PORT
     - run: npm test
     
