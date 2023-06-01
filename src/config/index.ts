@@ -3,7 +3,7 @@ import { logger } from "./logger";
 const envFound = dotenv.config();
 
 if (envFound.error) {
-  logger.error("eroare");
+  logger.error("test 2");
 }
 
 process.env.NODE_ENV = process.env.NODE_ENV || "development";
