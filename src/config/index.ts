@@ -1,9 +1,9 @@
 import dotenv from "dotenv";
-
+import { logger } from "./logger";
 const envFound = dotenv.config();
 
 if (envFound.error) {
-  console.warn(`.env couldn't be found. Ignore if you are in a workflow`);
+  logger.error("eroare");
 }
 
 process.env.NODE_ENV = process.env.NODE_ENV || "development";
