@@ -28,13 +28,13 @@ Make sure you have the following dependencies installed:
 ## Installation
 
 1. Clone the repository:
-git clone https://github.com/your-username/express-typescript-starter.git
+`git clone https://github.com/your-username/express-typescript-starter.git`
 
 2. Change to the project directory:
-cd express-typescript-starter
+`cd express-typescript-starter`
 
 3. Install the dependencies:
-npm install
+`npm install`
 
 ## Configuration
 
@@ -45,11 +45,11 @@ npm install
 ## Usage
 
 - **Development**: Run the application in development mode with automatic restart using the following command:
-npm run dev
+`npm run dev`
 
 - **Production**: Build and start the application for production using the following commands:
-npm run build
-node ./dist/app.js
+`npm run build`
+`node ./dist/app.js`
 
 
 ## Scripts
