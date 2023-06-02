@@ -1,10 +1,11 @@
 Dockerfile
-docker-compose.yml
 node_modules
 LICENSE
 README.md
-npm-debug.log
 .husky
 coverage
 dist
 logs
+.git
+.gitignore
+.dockerignore
