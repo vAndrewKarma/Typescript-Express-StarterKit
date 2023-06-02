@@ -53,6 +53,5 @@ jobs:
           path: ~/.npm
           key: ${{ runner.os }}-test-${{ hashFiles('**/package-lock.json') }}
           restore-keys: ${{ runner.os }}-test-
-      - run: npm ci    
       - name: Run tests
         run: npm run test
