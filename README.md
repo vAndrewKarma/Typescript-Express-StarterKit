@@ -38,7 +38,7 @@ npm install
 
 ## Configuration
 
-1. Create a `.env` file in the project root and specify any necessary environment variables.
+1. Change  `.env.example` file  into `.env` in the project root.
 
 2. Customize the configuration files according to your project requirements.
 
