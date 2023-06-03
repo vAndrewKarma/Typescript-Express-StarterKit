@@ -91,7 +91,7 @@ This project is licensed under the [MIT License](https://opensource.org/licenses
 ## Contact
 
 For any inquiries or feedback, please contact:
-For further help/questions this is my [Discord](https://discord.gg/Sd9tzBPX)
+For further help/questions this is my [Discord](https://discord.gg/Sd9tzBPX).
 
 
-Author: [Karma Andrew](mailto:karma.andrew16@gmail.coom)
+Author: [Karma Andrew](mailto:karma.andrew16@gmail.com)
