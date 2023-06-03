@@ -28,7 +28,7 @@ Make sure you have the following dependencies installed:
 ## Installation
 
 1. Clone the repository:
-`git clone https://github.com/your-username/Typescript-Express-StarterKit.git`
+`git clone https://github.com/vAndrewKarma/Typescript-Express-StarterKit.git`
 
 2. Change to the project directory:
 `cd Typescript-Express-StarterKit`
@@ -82,7 +82,7 @@ To containerize your Typescript-Express-StarterKit application using Docker, fol
 
 ## Contributing
 
-Contributions are welcome! Please follow the guidelines in [CONTRIBUTING.md](https://github.com/your-username/Typescript-Express-StarterKit/blob/main/CONTRIBUTING.md) to contribute to this project.
+Contributions are welcome! Please follow the guidelines in [CONTRIBUTING.md](https://github.com/vAndrewKarma/Typescript-Express-StarterKit/blob/main/CONTRIBUTING.md) to contribute to this project.
 
 ## License
 
