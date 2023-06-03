@@ -78,7 +78,7 @@ To containerize your Express-Typescript application using Docker, follow these s
 `docker run -p <host-port>:<container-port> express-typescript-app`
 
 
-3. Good job, now your server is listening to <host-port>`.
+3. Good job, now your server is listening to `<host-port>`.
 
 ## Contributing
 
