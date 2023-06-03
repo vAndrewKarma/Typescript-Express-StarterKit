@@ -1,8 +1,8 @@
-# Express-Typescript Starter Kit
+# Typescript-Express Starter Kit
 
 ![Express-Typescript Starter Kit](https://repository-images.githubusercontent.com/162537377/9c807700-9828-11ea-8a3b-47411956130e)
 
-A simple Express-Typescript starter kit, designed to provide a solid foundation for building your next great project.
+A simple Typescript-Express starter kit, designed to provide a solid foundation for building your next great project.
 
 ## Description
 
@@ -28,10 +28,10 @@ Make sure you have the following dependencies installed:
 ## Installation
 
 1. Clone the repository:
-`git clone https://github.com/your-username/express-typescript-starter.git`
+`git clone https://github.com/your-username/Typescript-Express-StarterKit.git`
 
 2. Change to the project directory:
-`cd express-typescript-starter`
+`cd Typescript-Express-StarterKit`
 
 3. Install the dependencies:
 `npm install`
@@ -67,7 +67,7 @@ Make sure you have the following dependencies installed:
 
 ## Docker Workflow
 
-To containerize your Express-Typescript application using Docker, follow these steps:
+To containerize your Typescript-Express-StarterKit application using Docker, follow these steps:
 
 1. Build the Docker image:
 
@@ -82,7 +82,7 @@ To containerize your Express-Typescript application using Docker, follow these s
 
 ## Contributing
 
-Contributions are welcome! Please follow the guidelines in [CONTRIBUTING.md](https://github.com/your-username/express-typescript-starter/blob/main/CONTRIBUTING.md) to contribute to this project.
+Contributions are welcome! Please follow the guidelines in [CONTRIBUTING.md](https://github.com/your-username/Typescript-Express-StarterKit/blob/main/CONTRIBUTING.md) to contribute to this project.
 
 ## License
 
