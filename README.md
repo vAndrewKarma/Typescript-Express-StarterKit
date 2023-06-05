@@ -73,7 +73,7 @@ To containerize your Typescript-Express-StarterKit application using Docker, fol
     
 `docker-compose -f docker-compose.yml -f docker-compose.dev.yml up -d `
 
-2. Good job, now your server is listening to `<host-port>`.
+2. Good job, now your server is listening to the port you have configured in the `docker-composer`.
 
 ## Contributing
 
