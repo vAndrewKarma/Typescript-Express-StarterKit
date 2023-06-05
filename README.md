@@ -8,6 +8,17 @@ A simple Typescript-Express starter kit, designed to provide a solid foundation 
 
 This starter kit provides a boilerplate for developing Express applications using Typescript. It includes essential dependencies and configuration to kickstart your development process.
 
+## TODO
+- [X] Set up the basic app, with all it's features listed below
+- [X] Set up Github Workflow
+- [X] Add docker workflow to the project
+- [ ] Implement Kubernetes
+- [ ] Optimize the performance and make the app scalable
+- [X] Investigate and fix any known issues or bugs
+- [ ] Consider adding additional features or integrations to enhance the functionality
+
+Feel free to contribute to any of the above items or suggest your own improvements. We appreciate any contributions to make this starter kit even better!
+
 ## Features
 
 - **Express**: A fast, unopinionated web framework for Node.js.
