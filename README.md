@@ -69,16 +69,11 @@ Make sure you have the following dependencies installed:
 
 To containerize your Typescript-Express-StarterKit application using Docker, follow these steps:
 
-1. Build the Docker image:
-
-`docker build -t express-typescript-app .`
-
-2. Run the Docker container, mapping the desired host port to the container port:
+1. Run the Docker container in development mode:
     
-`docker run -p <host-port>:<container-port> express-typescript-app`
+`docker-compose -f docker-compose.yml -f docker-compose.dev.yml up -d `
 
-
-3. Good job, now your server is listening to `<host-port>`.
+2. Good job, now your server is listening to `<host-port>`.
 
 ## Contributing
 
