@@ -47,10 +47,8 @@ Make sure you have the following dependencies installed:
 - **Development**: Run the application in development mode with automatic restart using the following command:
 `npm run dev`
 
-- **Production**: Build and start the application for production using the following commands:
-`npm run build`
-`node ./dist/app.js`
-
+- **Production**: Run the application a docker container usingg the docker-compose:
+`docker-compose -f docker-compose.yml -f docker-compose.prod.yml`
 
 ## Scripts
 
