@@ -1,0 +1,11 @@
+version: '3'
+services:
+  typescript-express:
+    build:
+      context: .
+      # args:
+      #   - NODE_ENV=production
+    environment:
+      - NODE_ENV=production
+      - CLIENT=http://localhost:3001
+    command: node dist/app.js

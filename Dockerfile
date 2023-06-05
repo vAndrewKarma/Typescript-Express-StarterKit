@@ -11,6 +11,12 @@ COPY package*.json ./
 RUN npm ci --ignore-scripts
 
 
+# ARG NODE_ENV
+# # RUN if [ "$NODE_ENV" = "development" ];\
+# #         then npm ci --ignore-scripts;\
+# #         else npm ci  --ignore-scripts --only=production;\
+# #         fi
+
 
 # Copy the rest of the application code
 COPY . ./
@@ -19,12 +25,15 @@ COPY . ./
 RUN npm run ready
 
 ENV PORT=3000
-ENV NODE_ENV=developments
+ENV NODE_ENV=development
 ENV CLIENT=http://localhost:3000
 
+#used actually just for documentation the expose thing does nothing
+
 EXPOSE ${PORT}
+
 # Specify the command to run when the container starts
-CMD [ "node", "dist/app.js" ]
+CMD ["node","dist/app.js"]
 
 
 

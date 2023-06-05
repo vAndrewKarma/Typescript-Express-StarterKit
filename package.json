@@ -38,7 +38,7 @@
   "scripts": {
     "test": "jest",
     "prepare": "husky install .husky && npx husky-init -y  && npx husky set .husky/pre-commit \"npm run precommit\"",
-    "dev": "nodemon",
+    "dev": "nodemon -L",
     "prettier": "prettier --check **/*.js",
     "lint": "eslint --ignore-path .gitignore --ext .js,.ts,.tsx .",
     "build": "tsc -p tsconfig.json",

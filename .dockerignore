@@ -8,3 +8,9 @@ dist
 logs
 .git
 tests
+CONTRIBUTING.md
+jest.config.ts
+logs
+.dockerignore
+.env
+docker-compose*
