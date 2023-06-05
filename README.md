@@ -6,7 +6,7 @@ A simple Typescript-Express starter kit, designed to provide a solid foundation 
 
 ## Description
 
-This starter kit provides a boilerplate for developing Express applications using Typescript. It includes essential dependencies and configuration to kickstart your development process.
+This starter kit provides a comprehensive template for developing Express applications using Typescript. It comes with all the essential dependencies and configurations needed to kickstart your development process without wasting time on manual setup.
 
 ## Features
 
