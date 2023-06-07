@@ -11,6 +11,7 @@ This starter kit provides a comprehensive template for developing Express applic
 ## TODO
 - [X] Set up the basic app, with all it's features listed below
 - [X] Set up Github Workflow
+- [X] Implement Error Handling
 - [ ] Implement Microservices Arhitecture
 - [ ] Improve the Github Workflow
 - [X] Add Docker Workflow to the project
