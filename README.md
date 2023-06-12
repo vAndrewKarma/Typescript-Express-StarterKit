@@ -21,6 +21,7 @@ This starter kit provides a comprehensive template for developing Express applic
 - [X] Investigate and fix any known issues or bugs
 - [ ] Consider adding additional features or integrations to enhance the functionality
 - [ ] Implement Code Review using Chat GPT
+- [ ] Implement a testing way to see how the app handles a ton of requests in the same time
 
 Feel free to contribute to any of the above items or suggest your own improvements. We appreciate any contributions to make this starter kit even better!
 
