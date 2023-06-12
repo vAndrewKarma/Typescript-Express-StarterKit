@@ -101,7 +101,7 @@ This project is licensed under the [MIT License](https://opensource.org/licenses
 
 ## Contact
 
-For any inquiries or feedback, please contact: [Discord](https://discord.gg/Sd9tzBPX).
+For any inquiries or feedback, please contact: [Discord](https://discord.gg/cxpK6qSxkG).
 
 
 Author: [Karma Andrew](mailto:karma.andrew16@gmail.com)
