@@ -17,6 +17,7 @@ This starter kit provides a comprehensive template for developing Express applic
 - [X] Add Docker Workflow to the project
 - [ ] Improve the Docker Workflow
 - [ ] Implement Kubernetes
+- [ ] Implement CI/CD PipeLine
 - [ ] Optimize the performance and make the app scalable
 - [X] Investigate and fix any known issues or bugs
 - [ ] Consider adding additional features or integrations to enhance the functionality
