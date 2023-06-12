@@ -4,7 +4,7 @@ import { logger } from "./config/logger";
 async function init() {
   const app = express();
   // REMINDER: add production and dev env for startup
-  (await import("./loaders")).default({ app }); // loading necesar "components"
+  (await import("./loaders")).default({ app }); // loading necessary "components"
   if (require.main === module) {
     // check if the current module is the main module being run directly
     app
