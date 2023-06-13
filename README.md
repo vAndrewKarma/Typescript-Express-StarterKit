@@ -18,6 +18,8 @@ This starter kit provides a comprehensive template for developing Express applic
 - [ ] Improve the Docker Workflow
 - [ ] Implement Kubernetes
 - [ ] Implement CI/CD PipeLine
+- [ ] Implement a Database
+- [ ] Implement the database in Github Actions
 - [ ] Optimize the performance and make the app scalable
 - [X] Investigate and fix any known issues or bugs
 - [ ] Consider adding additional features or integrations to enhance the functionality
@@ -41,7 +43,8 @@ Make sure you have the following dependencies installed:
 
 - Node.js 
 - npm 
-- Docker - [OPTIONAL]
+- Docker
+- Kubernetes
 
 ## Installation
 
