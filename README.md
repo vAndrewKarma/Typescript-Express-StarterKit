@@ -18,6 +18,7 @@ This starter kit provides a comprehensive template for developing Express applic
 - [ ] Improve the Docker Workflow
 - [ ] Implement Kubernetes
 - [ ] Implement CI/CD PipeLine
+- [ ] Implement gRPC arhitecture cause it's much faster than rest
 - [ ] Implement a Database
 - [ ] Implement the database in Github Actions
 - [ ] Optimize the performance and make the app scalable
