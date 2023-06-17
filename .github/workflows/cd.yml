@@ -20,4 +20,4 @@ jobs:
       - name: Publish the Docker image
         run: |
           echo ${{ secrets.DOCKERHUB_USERNAME }} | docker login --username ${{ secrets.DOCKERHUB_USERNAME }} --password-stdin
-          docker push my-image-name:$(date +%s)
+          docker push typescript-express-starter:$(date +%s)
