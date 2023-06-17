@@ -12,14 +12,13 @@ This starter kit provides a comprehensive template for developing Express applic
 - [X] Set up the basic app, with all it's features listed below
 - [X] Set up Github Workflow
 - [X] Implement Error Handling
-- [ ] Improve the Github Workflow
+- [X] Improve the Github Workflow
 - [X] Add Docker Workflow to the project
-- [ ] Improve the Docker Workflow
-- [ ] Implement CI/CD PipeLine
+- [X] Improve the Docker Workflow
+- [X] Implement CI/CD PipeLine
 - [X] Optimize the performance
 - [X] Investigate and fix any known issues or bugs
-- [ ] Consider adding additional features or integrations to enhance the functionality
-- [ ] Implement Code Review using Chat GPT
+- [X] Consider adding additional features or integrations to enhance the functionality
 - [ ] Implement a testing way to see how the app handles a ton of requests in the same time
 
 Feel free to contribute to any of the above items or suggest your own improvements. We appreciate any contributions to make this starter kit even better!
