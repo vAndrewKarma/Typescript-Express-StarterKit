@@ -65,7 +65,7 @@ Make sure you have the following dependencies installed:
 `npm run dev`
 
 - **Production**: Run the application a docker container using the docker-compose:
-`docker-compose -f docker-compose.yml -f docker-compose.prod.yml`
+`docker-compose -f docker-compose.yml -f docker-compose.prod.yml up -d`
 
 ## Scripts
 
