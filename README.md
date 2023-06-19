@@ -40,7 +40,6 @@ Make sure you have the following dependencies installed:
 - Node.js 
 - npm 
 - Docker
-- Kubernetes
 
 ## Installation
 
@@ -74,6 +73,8 @@ Make sure you have the following dependencies installed:
 - `dev`: Run the application in development mode with automatic restart (using Nodemon).
 - `prettier`: Check if code formatting adheres to Prettier rules.
 - `lint`: Run ESLint for linting code.
+- `start-build`: Run and build the app.
+- `start`: Run the app.
 - `build`: Build the Typescript code using the TypeScript compiler.
 - `lint:fix`: Run ESLint and fix linting errors automatically.
 - `format`: Format code using Prettier.
