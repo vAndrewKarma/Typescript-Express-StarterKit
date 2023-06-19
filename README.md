@@ -60,7 +60,7 @@ Make sure you have the following dependencies installed:
 
 ## Usage
 
-- **Development**: Run the application in development mode with automatic restart using the following command:
+- **Development**: Run the application in development mode with automatic restart using the following command: <br>
 `npm run dev`
 
 - **Production**: Run the application a docker container using the docker-compose: <br>
