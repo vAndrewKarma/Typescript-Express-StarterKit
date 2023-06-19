@@ -63,7 +63,7 @@ Make sure you have the following dependencies installed:
 - **Development**: Run the application in development mode with automatic restart using the following command:
 `npm run dev`
 
-- **Production**: Run the application a docker container using the docker-compose:
+- **Production**: Run the application a docker container using the docker-compose: <br>
 `docker-compose -f docker-compose.yml -f docker-compose.prod.yml up -d`
 
 ## Scripts
