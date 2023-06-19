@@ -19,7 +19,7 @@ This starter kit provides a comprehensive template for developing Express applic
 - [X] Optimize the performance
 - [X] Investigate and fix any known issues or bugs
 - [X] Consider adding additional features or integrations to enhance the functionality
-- [ ] Implement Microservices
+
 
 
 Feel free to contribute to any of the above items or suggest your own improvements. We appreciate any contributions to make this starter kit even better!
